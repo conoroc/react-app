@@ -14,19 +14,12 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-console.log('Hello World from Webpacker');
-
-import React from 'react';
-import { render } from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import App from '../components/App';
-import 'bootstrap/dist/css/bootstrap.css';
+import React from 'react'
+import { render } from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
+import App from '../components/App'
+import 'bootstrap/dist/css/bootstrap.css'
 
 document.addEventListener('DOMContentLoaded', () => {
-	render(
-		<BrowserRouter>
-			<App />
-		</BrowserRouter>,
-		document.querySelector('#root')
-	);
-});
+	render(<App />, document.querySelector('#root'))
+})
